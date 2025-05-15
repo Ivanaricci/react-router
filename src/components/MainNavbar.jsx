@@ -11,6 +11,10 @@ const links = [
         label: "Chi Siamo",
     },
     {
+        path: '/listaprodotti',
+        label: "Lista Prodotti",
+    },
+    {
         path: '/prodotti',
         label: "Prodotti",
     },
