@@ -20,11 +20,11 @@ const MainNavbar = () => {
     return (
         <header>
             <nav>
-                <ul>
+                <ul className='list-unstyled d-flex'>
                     {links.map((link, index) => {
                         return (
-                            <li key={index}>
-                                <li><NavLink to={link.path}>{link.label}</NavLink></li>
+                            <li className='mx-2' key={index}>
+                                <NavLink className="custom-link" to={link.path}>{link.label}</NavLink>
                             </li>
                         )
                     })}
