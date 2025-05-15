@@ -6,15 +6,13 @@ const ListaProdotti = () => {
 
     const [products, setProducts] = useState([]);
 
-    const getProducts = () => {
+
+
+    useEffect(() => {
         axios.get("https://fakestoreapi.com/products")
             .then((resp) => {
                 setProducts(resp.data)
             });
-    }
-
-    useEffect(() => {
-        getProducts
     }, [])
 
 
@@ -33,10 +31,10 @@ const ListaProdotti = () => {
                 <div className="row g-3">
                     {products.map((product) => {
                         return (
-                            <div className="col-12 col-md-6">
+                            <div className="col-12 col-md-6 lg-4" key={product.id}>
                                 <div className="card">
                                     <div className="card-image-top">
-                                        <img src={product.image} alt="" />
+                                        <img src={product.image} className='img-fluid' alt="" />
                                     </div>
                                     <div className="card-body">
                                         <h3>{product.title}</h3>
