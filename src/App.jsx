@@ -3,6 +3,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import Homepage from "./pages/Homepage"
 import Chisiamo from './pages/Chisiamo'
 import ListaProdotti from './products/ListaProdotti'
+import DetailProduct from './products/DetailProduct'
 
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
           <Route path="/chisiamo" Component={Chisiamo}></Route>
           <Route path="/listaprodotti">
             <Route index Component={ListaProdotti}></Route>
+            <Route path=':id'>{DetailProduct}</Route>
           </Route>
         </Routes>
       </BrowserRouter>
