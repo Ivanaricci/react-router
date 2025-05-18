@@ -24,22 +24,24 @@ const DetailProduct = () => {
     }, []);
 
     return (
-        <div>
-            <h1>Dettaglio prodotto</h1>
-            <div className="container">
+        <div className='container'>
+            <h1 className='py-5'>Dettaglio prodotto</h1>
+            <div>
                 <div className="row">
                     <div className="col-12">
                         <div className='image-container'>
-                            <img src={product.image} alt={product.title} />
+                            <img className='img-fluid' src={product.image} alt={product.title} />
                         </div>
-                        <h1>{product.title}</h1>
-                        <span>
-                            <em>{product.price} &euro;</em>
-                        </span>
-                        <span>
-                            <strong>{product.category}</strong>
-                        </span>
-                        <p>{product.description}</p>
+                        <div>
+                            <h1 className='pt-5'>{product.title}</h1>
+                            <p>
+                                <em>{product.price} &euro;</em>
+                            </p>
+                            <p>
+                                <strong>{product.category}</strong>
+                            </p>
+                            <p><strong>Descrizione:</strong> {product.description}</p>
+                        </div>
                     </div>
                 </div>
             </div>
