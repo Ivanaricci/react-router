@@ -23,7 +23,7 @@ const MainNavbar = () => {
                 <ul className='list-unstyled d-flex justify-content-center'>
                     {links.map((link, index) => {
                         return (
-                            <li className='mx-2' key={index}>
+                            <li className='mx-3' key={index}>
                                 <NavLink className="custom-link" to={link.path}>{link.label}</NavLink>
                             </li>
                         )
