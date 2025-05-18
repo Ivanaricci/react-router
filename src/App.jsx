@@ -13,12 +13,10 @@ function App() {
     <>
       <BrowserRouter>
         <Routes>
-          <Route path="/" Component={Homepage}></Route>
-          <Route path="/chisiamo" Component={Chisiamo}></Route>
-          <Route path="/listaprodotti">
-            <Route index Component={ListaProdotti}></Route>
-            <Route path=':id'>{DetailProduct}</Route>
-          </Route>
+          <Route path="/" element={<Homepage />}></Route>
+          <Route path="/chisiamo" element={<Chisiamo />}></Route>
+          <Route path="/listaprodotti" element={<ListaProdotti />} />
+          <Route path="/products/:id" element={<DetailProduct />} />
         </Routes>
       </BrowserRouter>
     </>

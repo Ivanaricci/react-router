@@ -12,3 +12,7 @@ nav {
     font-size: 20px;
     padding: 50px;
 }
+
+.image-container {
+    max-width: 500px;
+}

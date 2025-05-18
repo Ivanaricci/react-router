@@ -33,7 +33,7 @@ const ListaProdotti = () => {
                     {products.map((product) => {
                         return (
                             <div className="col-12 col-md-6 col-lg-4" key={product.id}>
-                                <NavLink to={`/products/${ListaProdotti.id}`}>
+                                <NavLink to={`/products/${product.id}`}>
                                     <div className="card">
                                         <div className="card-image-top">
                                             <img src={product.image} className='img-fluid' alt="" />
