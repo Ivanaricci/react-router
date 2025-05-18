@@ -7,3 +7,8 @@
 .custom-link:hover {
     font-weight: 700;
 }
+
+nav {
+    font-size: 20px;
+    padding: 50px;
+}

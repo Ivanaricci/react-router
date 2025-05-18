@@ -14,17 +14,13 @@ const links = [
         path: '/listaprodotti',
         label: "Lista Prodotti",
     },
-    {
-        path: '/prodotti',
-        label: "Prodotti",
-    },
 ]
 
 const MainNavbar = () => {
     return (
         <header>
             <nav>
-                <ul className='list-unstyled d-flex'>
+                <ul className='list-unstyled d-flex justify-content-center'>
                     {links.map((link, index) => {
                         return (
                             <li className='mx-2' key={index}>

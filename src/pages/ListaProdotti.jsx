@@ -23,7 +23,7 @@ const ListaProdotti = () => {
             <div className="container">
                 <div className="row">
                     <div className="col-12">
-                        <h1>
+                        <h1 className='pb-5'>
                             Lista Prodotti
                         </h1>
                     </div>
@@ -31,7 +31,7 @@ const ListaProdotti = () => {
                 <div className="row g-3">
                     {products.map((product) => {
                         return (
-                            <div className="col-12 col-md-6 lg-4" key={product.id}>
+                            <div className="col-12 col-md-6 col-lg-4" key={product.id}>
                                 <div className="card">
                                     <div className="card-image-top">
                                         <img src={product.image} className='img-fluid' alt="" />
